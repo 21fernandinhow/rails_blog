@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @post %>
+
+<div>
+  <%= link_to "Edit this post", edit_post_path(@post), class: "button is-danger is-outlined my-2" %> |
+  <%= link_to "Back to posts", posts_path, class: "button is-danger is-outlined my-2" %>
+
+  <%= button_to "Destroy this post", @post, method: :delete %>
+</div>
+
+<%= render "comments/form", post: @post %>

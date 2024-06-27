@@ -1,0 +1,9 @@
+
+<h3 class="has-text-centered title is-4 mt-3"> Students </h3>
+<hr>
+<% @students.each do |student| %>
+    <details class="my-4 p-4 notification">
+        <summary> <%= student[:name]%> </summary>
+        Idade: <%= student[:age] %> - Curso: <%= student[:course] %>
+    </details>
+<% end%>
